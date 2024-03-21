@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+
+header,
+footer {
+    height: 150px;
+    clear: both;
+}
+
+.one {
+    height: 200px;
+    float: left;
+    width: 100%;
+}
+
+.two {
+    height: 250px;
+    float: left;
+}
+
+.small {
+    width: 40%
+}
+
+.big {
+    width: 60%
+}
