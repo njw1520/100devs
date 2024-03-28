@@ -21,22 +21,93 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
-}
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+* {
+  text-align: center;
+}
 
+header {
+  height: 55px;
+  background: rgb(96, 106, 128);
+}
+
+header ul,
+header img,
+header a {
+  padding-top: 10px;
+  float: left;
+  width: 33%;
+  list-style-type: none;
+  color: white;
+}
+
+header ul {
+  margin: 0;
+}
+
+main {
+  background: rgb(96, 106, 128);
+  color: white;
+  float: left;
+}
+
+
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.sec {
+  float: left;
+  width: 100%;
+}
+
+.one {
+  padding: 5% 15%
+}
+
+
+.two,
+.four {
+  padding: 5% 30%
+}
+
+
+.three {
+  width: 100%;
+  background: rgb(190, 193, 199);
+  padding: 5%;
+}
+
+.three section {
+  width: 50%;
+  float: left;
+  padding: 0 2%;
+}
+
+.three a {
+  color: black;
+  text-transform: uppercase;
+  padding: 1% 5%;
+  border: 1px solid black;
 }
 
 footer {
-
+  float: left;
+  background: rgb(23, 36, 44);
+  width: 100%;
+  height: 150px;
+  text-align: left;
+  color: white;
 }
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
