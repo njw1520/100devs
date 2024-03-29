@@ -1,6 +1,7 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  text-align: center;
 }
 
 /* Clear fix hack */
@@ -12,7 +13,6 @@
      line-height: 0;
      height: 0;
 }
-
 .clear {
 	clear: both;
 }
@@ -25,88 +25,81 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
-* {
-  text-align: center;
+
+header *,
+main {
+  background: rgb(90, 90, 129);
+  margin: 0em 0em;
+  color: white;
 }
 
 header {
+  padding-top: 3%;
+  background: rgb(90, 90, 129);
+}
+
+header * {
   height: 55px;
-  background: rgb(96, 106, 128);
-}
-
-header ul,
-header img,
-header a {
-  padding-top: 10px;
   float: left;
-  width: 33%;
+  width: 33.333%;
   list-style-type: none;
-  color: white;
-}
-
-header ul {
-  margin: 0;
-}
-
-main {
-  background: rgb(96, 106, 128);
-  color: white;
-  float: left;
-}
-
-
-
-h1, h2, h3 {
   text-transform: uppercase;
 }
 
-a {
+
+header img {
+  padding: 0 6em;
+}
+
+
+header a,
+main a {
   color: white;
   text-decoration: none;
 }
 
+h1, h2, h3, .four a, .three a {
+  text-transform: uppercase;
+}
+
 .sec {
   float: left;
-  width: 100%;
+  padding: 8% 15%;
 }
 
-.one {
-  padding: 5% 15%
-}
-
-
-.two,
-.four {
-  padding: 5% 30%
-}
-
-
-.three {
-  width: 100%;
-  background: rgb(190, 193, 199);
-  padding: 5%;
-}
-
-.three section {
-  width: 50%;
-  float: left;
-  padding: 0 2%;
-}
-
+.four a,
 .three a {
   color: black;
-  text-transform: uppercase;
-  padding: 1% 5%;
   border: 1px solid black;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+.three {
+  background: lightgray;
+}
+
+.three section{
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.three *,
+.four * {
+  padding: 10px 0;
 }
 
 footer {
-  float: left;
-  background: rgb(23, 36, 44);
+  background: rgb(9, 29, 32);
   width: 100%;
-  height: 150px;
-  text-align: left;
+  float: left;
+  height: 125px;
   color: white;
+}
+
+footer span {
+  text-align: left;
 }
 /******************************************
 /* ADDITIONAL STYLES
