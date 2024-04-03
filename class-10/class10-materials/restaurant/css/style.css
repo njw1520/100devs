@@ -1,0 +1,205 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  float: left;
+  width: 100%
+}
+
+header li {
+  float: right;
+  padding: 15px;
+}
+
+header i {
+  color: black;
+}
+
+main {
+  float: left;
+  width: 100%;
+  padding-left: 15%;
+  padding-bottom: 10%;
+}
+
+main h1 {
+  font-size: 72px;
+  padding-right: 60%;
+}
+
+main input {
+  width: 25%;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+}
+
+
+main li {
+  float: left;
+  padding-right: 60px;
+}
+
+main i {
+  padding-right: 5px;
+}
+
+.about {
+  padding-left: 40%;
+  padding-right: 20%;
+}
+
+
+.cuisine,
+.hours,
+.testimonials {
+
+  text-align: center;
+  margin-top: 200px;
+}
+
+.courses {
+  text-align: center;
+}
+
+.courses li {
+  display: inline-block;
+  text-align: left;
+  border-bottom: 2px solid lightgray;
+  padding: 0 20px;
+}
+
+.courses li:first-child {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+.active {
+  color: orange
+}
+
+.foodpics {
+  margin-top: 2%;
+  padding: 0 10%;
+}
+
+.foodpics li {
+  float: left;
+  width: 25%;;
+}
+
+.hours,
+.testimonials {
+  float: left;
+  width: 100%;
+}
+
+.hours div {
+  padding: 0 10px;
+}
+
+.hours i {
+  border-radius: 25px;
+  border: 1px solid orange;
+  padding: 10px;
+}
+
+.hours div {
+  padding-top: 10px;
+}
+
+.phone_number {
+  font-size: 40px;
+  font-weight: bold;
+  color: orange;
+}
+
+.hours li span{
+  float: left;
+  width: 50%;
+  color: black;
+}
+
+
+.time {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hoz_scroll {
+  padding-top: 10%;
+}
+
+.testimonials {
+  padding: 0 20%;
+}
+
+.testimonials img {
+  border-radius: 50px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.button {
+  background: orange;
+  border-radius: 2px;
+  color: white;
+  border: .25em solid orange;
+  padding: .5em
+}
+
+h2 {
+  font-size: 60px;
+}
+
+span {
+  color: orange;
+}
+
+i {
+  color: orange
+}
+
+a {
+  color: gray;
+}
+
+main {
+  background-image: url("https://img.freepik.com/premium-photo/flat-lay-with-bowl-fresh-green-salad-leaves-lettuce-spinach-red-cherry-tomatoes-cups-halves-healthy-vegetarian-eating-concept_371428-1453.jpg?w=1380");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+
+
+
