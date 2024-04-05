@@ -28,20 +28,6 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-  float: left;
-  width: 100%
-}
-
-header li {
-  float: right;
-  padding: 15px;
-}
-
-header i {
-  color: black;
-}
-
 main {
   float: left;
   width: 100%;
@@ -49,7 +35,12 @@ main {
   padding-bottom: 10%;
 }
 
+main ul {
+  float: right;
+}
+
 main h1 {
+  padding-top: 2rem;
   font-size: 72px;
   padding-right: 60%;
 }
@@ -72,17 +63,21 @@ main i {
 }
 
 .about {
-  padding-left: 40%;
-  padding-right: 20%;
+  padding: 10rem 2rem 10rem 30rem;
+}
+
+
+.about * {
+  padding: 1rem;
 }
 
 
 .cuisine,
 .hours,
 .testimonials {
-
   text-align: center;
-  margin-top: 200px;
+  padding-top: 100px;
+
 }
 
 .courses {
@@ -157,6 +152,11 @@ main i {
   padding-top: 10%;
 }
 
+.hoz_scroll li {
+  max-width: 100%;
+  margin-inline: auto;
+}
+
 .testimonials {
   padding: 0 20%;
 }
@@ -184,6 +184,7 @@ h2 {
 
 span {
   color: orange;
+  text-transform: uppercase;
 }
 
 i {
@@ -195,11 +196,43 @@ a {
 }
 
 main {
-  background-image: url("https://img.freepik.com/premium-photo/flat-lay-with-bowl-fresh-green-salad-leaves-lettuce-spinach-red-cherry-tomatoes-cups-halves-healthy-vegetarian-eating-concept_371428-1453.jpg?w=1380");
-  background-position: right;
+  background-image: url(/restaurant/FLSAh1LXoAE-EBs.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
+@media (max-width: 1000px)
+{
+  main nav {
+    display: none;
+  }
+
+  main form {
+    padding: 2rem;
+  }
+
+  main input {
+    width: 60%;
+  }
+  
+
+  .foodpics li {
+    float: left;
+    width: 50%;
+    display: block;
+  }
+
+  .about {
+    width: 100%;
+    display: block;
+    padding: 5rem;
+  }
+
+  .hoz_scroll img {
+    max-width: 100%;
+    padding: 2rem;
+  }
 
 
+}
