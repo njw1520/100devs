@@ -1,6 +1,7 @@
 /* Box Model Hack */
 * {
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 /* Clear fix hack */
@@ -21,6 +22,115 @@
 /* BASE STYLES
 /*******************************************/
 
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.hero,
+.momentum,
+.stylist {
+  overflow: auto;
+
+}
+.hero > section {
+  float: left;
+  width: 50%;
+  padding: 15rem 0rem 2rem 10rem;
+}
+
+.hero p {
+  padding: 2rem 2rem 2rem 0;
+  text-align: left;
+}
+
+.hero * {
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 8vw;
+}
+
+
+.hero-right i {
+  display: none;
+}
+
+.hours {
+  float: right;
+  margin-top: 100px;
+  display: block;
+  transform: rotate(90deg);
+  text-align: end;
+  text-shadow: 1px 1px 2px black;
+}
+
+.beautician section {
+  float: left;
+  width: 33%;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  text-align: center;
+}
+
+.beautician img,
+.stylist img {
+  max-width: 100%;;
+}
+
+.beautician h3 {
+  font-size: 2vw;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.beautician *,
+.momentum * {
+  padding: 1rem 0rem;
+}
+
+.beautician {
+  background: lightblue;
+}
+
+.momentum > section {
+  float: left;
+  width: 50%;
+  padding: 3rem 6rem;
+}
+
+.momentum h2 {
+  font-size: 4vh;
+  font-weight: bold;
+  padding-bottom: 0;
+}
+
+.momentum section * {
+  padding: 2rem 0rem;
+}
+
+.stylist > section {
+  float: left;
+  width: 33%;
+  padding: 3rem 6rem;
+}
+
+.stylist div {
+  text-align: center;
+}
+
+.person {
+  padding: 1rem;
+  background: black;
+  color: white;
+  margin: 0 1rem;
+  transform: translate(0,-2rem);
+  max-width: 100%;
+}
+
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -28,3 +138,87 @@
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero a,
+.momentum a {
+  padding: 1rem;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+}
+
+.hero {
+  background: url("/hair_salon/FLUCUd6XECMYEQm.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: local;
+}
+
+.first_visit {
+  margin-top: 5rem;
+  padding: 2rem;
+  background: black;
+  max-width: 60%;
+  line-height: 1.5;
+}
+
+
+.first_visit a {
+  background: white;
+  color: black; 
+}
+
+.first_visit strong {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.momentum {
+  background: rgb(221, 236, 241);
+}
+
+@media screen and (max-width: 960px) {
+
+  .navbar li:nth-child(-n+7) {
+    display: none;
+  }
+
+  .hours {
+    transform: none;
+    text-shadow: black;
+    float: left
+  }
+
+  .hero-right i {
+    display: none;
+    float: right;
+    padding: 0 1rem;
+  }
+
+  .hero > section,
+  .beautician > section,
+  .momentum > section,
+  .stylist > section {
+    display: block;
+    width: 100%;
+    padding: 2rem 4rem;
+  }
+
+  .momentum img,
+  .stylist img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .person {
+    margin: 0 auto;
+    max-width: 25%;
+    min-width: 25%;
+  }
+
+}
