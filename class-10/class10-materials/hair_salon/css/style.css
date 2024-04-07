@@ -80,7 +80,8 @@
   max-width: 100%;;
 }
 
-.beautician h3 {
+.beautician h3,
+.lookbook h3 {
   font-size: 2vw;
   font-weight: 700;
   text-transform: uppercase;
@@ -127,13 +128,46 @@
   color: white;
   margin: 0 1rem;
   transform: translate(0,-2rem);
-  max-width: 100%;
+  width: 13.5rem;
 }
 
+.special {
+  margin: 0 10rem;
+  padding: 8rem 10rem 8rem 3rem;
+  text-align: left;
+  line-height: 2.5;
+}
 
-/******************************************
-/* LAYOUT
-/*******************************************/
+.special * {
+  text-transform: uppercase;
+}
+
+.special p {
+  font-size: 1.5rem;
+}
+
+.lookbook {
+  text-align: center;
+  margin-top: 5rem;
+} 
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+.column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -145,7 +179,8 @@
 }
 
 .hero a,
-.momentum a {
+.momentum a,
+.special a {
   padding: 1rem;
   background: black;
   color: white;
@@ -173,7 +208,8 @@
   color: black; 
 }
 
-.first_visit strong {
+.first_visit strong,
+.special strong {
   font-size: 2vw;
   font-weight: bold;
 }
@@ -182,7 +218,11 @@
   background: rgb(221, 236, 241);
 }
 
-@media screen and (max-width: 960px) {
+.special {
+  background:rgb(221, 236, 241);
+}
+
+@media screen and (max-width: 1000px) {
 
   .navbar li:nth-child(-n+7) {
     display: none;
@@ -219,6 +259,11 @@
     margin: 0 auto;
     max-width: 25%;
     min-width: 25%;
+  }
+
+  .special {
+    max-width: 100%;
+    margin: 2rem;
   }
 
 }
