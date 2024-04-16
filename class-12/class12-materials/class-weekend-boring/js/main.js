@@ -1,10 +1,11 @@
 document.querySelector('#check').addEventListener('click', check)
 
+
 function check() {
 
   const day = document.querySelector('#day').value.toLowerCase();
 
-  //Conditionals go here
+  // Conditional check
 
   if (day === "monday" || day === "wednesday" || day === "friday") {
     document.querySelector('#placeToSee').innerText = "Boring Day!"

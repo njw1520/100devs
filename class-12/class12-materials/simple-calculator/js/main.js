@@ -8,12 +8,12 @@ document.querySelector('#lemons').addEventListener('click', add5)
 
 function makeZero() {
   total = 0
-  document.querySelector('#placeToPutResult').innerText = total
+  document.querySelector('#placeToPutResult').innerHTML = total
 }
 
 function jumanji() {
   total = total + 3
-  document.querySelector('#placeToPutResult').innerText = total
+  document.querySelector('#placeToPutResult').innerHTML = total
 }
 
 function add9() {
