@@ -4,7 +4,7 @@ body {
     border: 4px solid rgb(60, 197, 82);
     margin: 20px 20px;
     overflow-x: hidden;
-    overflow-y: scroll; 
+    overflow-y: scroll;
     max-width: 800px;
     margin: 100px auto;
 }
@@ -29,7 +29,7 @@ h2 {
 p {
     font-size: 18px;
     line-height: 1.5;
-    color: rgb(238, 238, 238)
+    color: rgb(238, 238, 238);
 }
 
 ul {
@@ -42,11 +42,10 @@ li {
     display: inline-block;
     padding-right: 1px;
     font-size: 18px;
-    
 }
 
 li a:link {
-    color: rgb(66, 196, 131)
+    color: rgb(66, 196, 131);
 }
 
 li a:hover {
@@ -56,7 +55,7 @@ li a:hover {
 li + li:before {
     content: "|";
     padding: 0 5px 0 0;
-    color: gray; 
+    color: gray;
 }
 
 footer nav ul {
@@ -70,4 +69,3 @@ img {
     min-width: 15%;
     max-height: auto;
 }
-
