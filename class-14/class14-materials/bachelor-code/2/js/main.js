@@ -1,5 +1,5 @@
-const andi = document.querySelector("#andi");
 const claire = document.querySelector("#claire");
+const andi = document.querySelector("#andi");
 const sharleen = document.querySelector("#sharleen");
 
 document.querySelector("#andiNext").addEventListener("click", andiNext);
@@ -13,13 +13,13 @@ function andiNext() {
 }
 
 function claireNext() {
-  andi.classList.add("hidden");
-  sharleen.classList.add("hidden");
   claire.classList.toggle("hidden");
+  sharleen.classList.add("hidden");
+  andi.classList.add("hidden");
 }
 
 function sharleenNext() {
-  andi.classList.add("hidden");
   claire.classList.add("hidden");
   sharleen.classList.toggle("hidden");
+  andi.classList.add("hidden");
 }

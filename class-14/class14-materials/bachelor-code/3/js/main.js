@@ -7,6 +7,7 @@ Array.from(contestants).forEach((element) =>
 function checkForRose(click) {
   if (click.target.classList.contains("rose")) {
     document.querySelector("#nikki").classList.toggle("hidden");
+    // document.querySelector(".body").style.background = rgba(255, 255, 0);
   } else {
     alert("Wrong!");
   }
